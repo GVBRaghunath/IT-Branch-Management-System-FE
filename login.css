@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: powderblue;
+    /* background:url('logo.png'); */
+    }
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 340px;
+    height: 350px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius:10px;
+    }
+
+.logo{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background:#1E1E1E;
+    border: #fff solid 8px;
+    border-radius: 50%;
+    top: -70px;
+    left: 115px;
+    width: 100px;
+    }
+
+.box h2{
+    margin: 0 0 30px;
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+    top: 20px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    text-transform:uppercase ;
+    }
+
+.box .inputBox{
+    position: relative;
+    left: -20px;
+    }
+
+.box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    background: transparent;
+}
+
+.box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    padding: 10px 0;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputBox i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 9px 8px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.inputBox input[type="text"]:focus + i {
+    color: dodgerBlue;
+}
+
+.inputBox input[type="password"]:focus + i {
+    color: dodgerBlue;
+}
+
+.inputBox.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 7px 4px;
+    border-radius: 4px 0 0 0;
+}
+
+.inputBox.inputIconBg input[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+}
+
+.inputBox.inputIconBg input[type="password"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+}
+
+.inputBox input[type="text"]:focus{
+    border-bottom: 1px solid oreange;
+}
+
+.inputBox input[type="password"]:focus{
+    border-bottom: 1px solid dodgerBlue;
+}
+
+.box input[type="text"] {
+    padding-left: 40px;
+}
+
+.box input[type="password"] {
+    padding-left: 40px;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;    
+}
+
+.box input[type="submit"]{
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 230px;
+    left: 255px;
+    color: white;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.box input[type="submit"]:hover{
+    background:#2980B9;
+}
+
+.fmpBtn{
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 230px;
+    left: 15px;
+    color: white;
+    background: #27AE60;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fmpBtn:hover{
+    background:#4BCE6A;
+}
+
+.crtBtn{
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 330px;
+    left: 25%;
+    color: #fff;
+    background: #FF4500;
+    border: 2px #fff double;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.socialLogin{
+    position: absolute;
+    top: 280px;
+    left: 30%;
+}
+
+.social1{
+    color: #4C6EF5;
+    font-size: 24px;
+    margin: 10px;
+    cursor:pointer;
+}
+
+.social2{
+    color: #FD7E14;
+    font-size: 24px;
+    margin: 10px;
+    cursor:pointer;
+}
+
+.social3{
+    color: #BE4BDB;
+    font-size: 24px;
+    margin: 10px;
+    cursor:pointer;
+}
